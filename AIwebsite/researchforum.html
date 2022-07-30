@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head style="font-family: monospace;">
+  <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+<!-- Navbar Section-->
+<nav class="navbar navbar-expand-lg navbar-light" 
+style="background-image: linear-gradient(to top right,#a8b5f7,#ffcceb);">
+
+<button class="navbar-toggler" 
+type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navbarSupportedContent" 
+aria-controls="navbarSupportedContent">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+  <ul class="navbar-nav" style="margin-left: auto; margin-right: auto;">
+
+    <li class="nav-item"><a class="nav-link px-5" href="index.html" style="color: black;">Home</a></li>
+
+    <li class="nav-item"><a class="nav-link px-5" href="researchforum.html" style="color: black;">Join our research forum</a></li>
+
+    <li class="nav-item"><a class="nav-link px-5" href="ailr.html" style="color: black;">Learning repository</a></li>
+
+    <li class="nav-item"><a class="nav-link px-5" href="DSlr.html" style="color: black;">Funzone</a></li>
+
+  </ul>
+
+</div>
+
+</nav>
+
+<style>
+body
+{ background-color: lavender;
+  height: 100%;
+  background-position: center;
+  background-size: cover; 
+font-family: monospace;}
+</style>
+</head>
+
+<body>
+<br>
+<h3 style="text-align: center;color: black;"><u>Join our research forum</u></h3>
+<p style="text-align: center;color: black;">( get a chance to associate with fellow developers/researchers/scientists! )</p>
+
+<form action="confirmationpage.php" method="POST" enctype="multipart/form-data" style="padding-left: 40px; color: black;">
+  <fieldset>
+    <div>
+      <label for="namez">*Full name:  </label>
+      <input type="text" name="namez" id="namez" placeholder="example) Johnny Tan" required><br><br>
+    </div>
+    <div>
+      <label for="password">*Set a password (must have: 6+ characters, atleast 1 different upper/lower case letter, number and special character):  </label>
+      <input type="Password" name="password" id="password" required><br><br>
+    </div>
+    <div>
+      <label for="date">Birth date:  </label>
+      <input type="date" name="bdate" id="bdate"><br><br>
+    </div>
+    <div>
+      <label for="email">*Email-id:  </label>
+      <input type="email" name="Email" id="Email" placeholder="example) johnnytan1250@dummyemail.com" size="40" required><br><br>
+    </div>
+    <div>
+      <br><button type="reset"><strong>reset</strong></button><br><br>
+      <button type="submit"><strong>submit</strong></button>
+    </div>
+  </fieldset>
+</form>
+</body>
+
+</html>
